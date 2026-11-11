@@ -35,9 +35,12 @@ Chosen, with no source, and marked so where they appear: the 800 V bus, the moto
 sized for them, the stall angles, the interference drag, the generator's time constant, the accumulator's taper and the
 wheels' spring and damper. README.md lists the model's known limits.
 
-The meshes (meshes/) are built from the flight model kit's generator scripts, with X1 Racing's livery, and are not
-under the GPL: the design's published sources state no licence of their own, and the geometry, the livery and the X1
-name remain their owners'. They are used here by the designer's permission. Changes made here: the body was generated at
-a higher resolution, unwrapped and baked to base colour and ORM textures; a cockpit opening with seats was cut under
-the canopy; the pushers moved out to y +-0.705 m, where their 26 in bores clear the tail boom; the fan blades and hubs
-are PteroLabs' redesign.
+The meshes (meshes/) are generated from the design's web GLB at revision 35396c71a6f90cea8ef162ffbb69d950aacc64f1
+(branch iter/cockpit-sim-screen, 10 Nov 2026, "Cockpit: open simulator cockpit with one centre screen, smooth canopy
+edge, one-piece seal"), SHA256 675e8a3378e750a610d1f5116bf43449d938db87b3e9c9113cc8c37262d9b1ad, by
+tools/build_pterosim_glb.py. They are not under the GPL: the design's published sources state no licence of their own,
+and the geometry, the livery and the X1 name remain their owners'. They are used here by the designer's permission.
+The adaptation bakes the flight pose into PteroSim's glTF frame (nose along -Z) and turns shells whose volume faced
+inward so the exterior is visible with back-face culling. Glass is the only double-sided material. The cockpit screen
+keeps the source UVs. Tanks and the engine placeholder are not in the visual. The October kit's separate NACA blade
+meshes are not used.

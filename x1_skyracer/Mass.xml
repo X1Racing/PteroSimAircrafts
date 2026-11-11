@@ -16,21 +16,21 @@
     <ixy unit="SLUG*FT2"> 0 </ixy>
     <ixz unit="SLUG*FT2"> -150.6 </ixz>
     <iyz unit="SLUG*FT2"> 0 </iyz>
-    <!-- rule book 3.3: 500 lb ballast in the front seats, 0.28 m above the cushions; trade with inertia/pointmass-weight-lbs[0..1] -->
+    <!-- rule book 3.3: 500 lb ballast, 0.28 m above the revision 35396c71 seat pans (pan top at 0.323 m). Weights unchanged. -->
     <pointmass name="Ballast, left front seat">
       <weight unit="LBS"> 250 </weight>
       <location unit="IN">
-        <x> -33.46 </x>
-        <y> -12.6 </y>
-        <z> 25.98 </z>
+        <x> -38.33 </x>
+        <y> -11.81 </y>
+        <z> 23.74 </z>
       </location>
     </pointmass>
     <pointmass name="Ballast, right front seat">
       <weight unit="LBS"> 250 </weight>
       <location unit="IN">
-        <x> -33.46 </x>
-        <y> 12.6 </y>
-        <z> 25.98 </z>
+        <x> -38.33 </x>
+        <y> 11.81 </y>
+        <z> 23.74 </z>
       </location>
     </pointmass>
   </mass_balance>

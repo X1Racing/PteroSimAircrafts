@@ -1,27 +1,29 @@
 <?xml version="1.0"?>
 <!--
   What this vehicle looks like. Metres and degrees, X forward, Y right, Z up, relative to the CG at race weight
-  (full propane, 500 lb ballast). Meshes from the X1 SkyRacer concept model, exported with the nose along glTF -Z.
+  (full propane, 500 lb ballast). PteroSim loads a glTF (x, y, z) as (-z, x, y), so these meshes are baked with
+  the nose along glTF -Z and +Y up. The body is revision 35396c71 in the flight pose, including the open cockpit.
   Fans spin CCW or CW as seen from above, pushers as seen from behind. A propeller turns clockwise seen from the tip of
-  its axis, so the axis points at that viewer for CW.
+  its axis, so the axis points at that viewer for CW. Rear ducts are canted 10 deg (thrust forward) and the pushers'
+  exhaust is 10 deg down; those angles are baked into the meshes, and the axis is the shaft.
 -->
 <visual>
-  <!-- Model origin (ground under the craft centre) relative to the race-weight CG at structural (7.12, 0, 29.19) in; wheels included -->
-  <fixture file="meshes/x1_body.glb" xyz="0.1808 0 -0.7414" rpy="0 0 0"/>
+  <!-- Model origin (ground under the craft centre) relative to the race-weight CG. Structural CG (6.43, 0, 28.87) in. -->
+  <fixture file="meshes/x1_body.glb" xyz="0.1632 0 -0.7334" rpy="0 0 0"/>
 
   <!-- Each fan mesh is centred on its hub, which is the engine's thruster location -->
-  <propeller file="meshes/x1_fan_upper_ccw.glb" xyz="0 0 0" rpy="0 0 0" motor="FL upper" axis="0 0 -1"/>
-  <propeller file="meshes/x1_fan_lower_cw.glb" xyz="0 0 0" rpy="0 0 0" motor="FL lower" axis="0 0 1"/>
-  <propeller file="meshes/x1_fan_upper_cw.glb" xyz="0 0 0" rpy="0 0 0" motor="FR upper" axis="0 0 1"/>
-  <propeller file="meshes/x1_fan_lower_ccw.glb" xyz="0 0 0" rpy="0 0 0" motor="FR lower" axis="0 0 -1"/>
-  <propeller file="meshes/x1_fan_upper_cw.glb" xyz="0 0 0" rpy="0 0 0" motor="RL upper" axis="0 0 1"/>
-  <propeller file="meshes/x1_fan_lower_ccw.glb" xyz="0 0 0" rpy="0 0 0" motor="RL lower" axis="0 0 -1"/>
-  <propeller file="meshes/x1_fan_upper_ccw.glb" xyz="0 0 0" rpy="0 0 0" motor="RR upper" axis="0 0 -1"/>
-  <propeller file="meshes/x1_fan_lower_cw.glb" xyz="0 0 0" rpy="0 0 0" motor="RR lower" axis="0 0 1"/>
+  <propeller file="meshes/x1_fan_fl_upper.glb" xyz="0 0 0" rpy="0 0 0" motor="FL upper" axis="0 0 -1"/>
+  <propeller file="meshes/x1_fan_fl_lower.glb" xyz="0 0 0" rpy="0 0 0" motor="FL lower" axis="0 0 1"/>
+  <propeller file="meshes/x1_fan_fr_upper.glb" xyz="0 0 0" rpy="0 0 0" motor="FR upper" axis="0 0 1"/>
+  <propeller file="meshes/x1_fan_fr_lower.glb" xyz="0 0 0" rpy="0 0 0" motor="FR lower" axis="0 0 -1"/>
+  <propeller file="meshes/x1_fan_rl_upper.glb" xyz="0 0 0" rpy="0 0 0" motor="RL upper" axis="0.1736 0 0.9848"/>
+  <propeller file="meshes/x1_fan_rl_lower.glb" xyz="0 0 0" rpy="0 0 0" motor="RL lower" axis="-0.1736 0 -0.9848"/>
+  <propeller file="meshes/x1_fan_rr_upper.glb" xyz="0 0 0" rpy="0 0 0" motor="RR upper" axis="-0.1736 0 -0.9848"/>
+  <propeller file="meshes/x1_fan_rr_lower.glb" xyz="0 0 0" rpy="0 0 0" motor="RR lower" axis="0.1736 0 0.9848"/>
 
-  <!-- Pusher blades sit 85.5 mm ahead of the thrust point, on the same shaft; each mesh is baked facing its own Z -->
-  <propeller file="meshes/x1_pusher_ccw.glb" xyz="0.0855 0 0" rpy="0 -90 0" motor="pusher left" axis="1 0 0"/>
-  <propeller file="meshes/x1_pusher_cw.glb" xyz="0.0855 0 0" rpy="0 -90 0" motor="pusher right" axis="-1 0 0"/>
+  <!-- Blade centre is 89 mm ahead of the thrust point along the 10 deg shaft -->
+  <propeller file="meshes/x1_pusher_left.glb" xyz="0.0885 0 0.0156" rpy="0 0 0" motor="pusher left" axis="0.9848 0 0.1736"/>
+  <propeller file="meshes/x1_pusher_right.glb" xyz="0.0885 0 0.0156" rpy="0 0 0" motor="pusher right" axis="-0.9848 0 -0.1736"/>
 
   <!-- chosen: ~2.5 craft lengths back so the 4.7 m span fits the frame -->
   <chase xyz="0 0 1.5" rpy="0 -15 0" length="14"/>
