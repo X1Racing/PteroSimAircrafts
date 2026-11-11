@@ -8,8 +8,10 @@
 # A Standard VTOL that never leaves multicopter mode: eight lift fans in four coaxial ducts fly it, and the two
 # pushers give the forward acceleration it would otherwise get by pitching down (VT_FWD_THRUST_EN, VT_PITCH_MIN 0).
 # It has no wing to fly on and no control surfaces, so a front transition in the air is cancelled as soon as it starts.
-# Rotor n is engine n of the JSBSim model and output channel n. Positions are metres from the race-weight CG
-# (3500 lb), forward-right-down; KM > 0 is counter-clockwise seen from above.
+# Rotor n is engine n of the JSBSim model and output channel n. Positions are metres from the race-weight mass CG
+# (ballast on the 35396c71 seats), forward-right-down; KM > 0 is counter-clockwise seen from above.
+# Rear ducts are canted 10 deg. The pushers' thrust axis is tilted 10 deg nose-up; their lateral offset stays
+# off the mixer so a pusher at rest is not asked for yaw.
 #
 
 . ${R}etc/init.d/rc.vtol_defaults
@@ -23,61 +25,61 @@ param set-default CA_SV_CS_COUNT 0
 # CT is in kN: PX4 uses only the ratios, but zeroes every mix entry under 1e-3 (ControlAllocationPseudoInverse.cpp),
 # and in newtons all roll and pitch entries of this vehicle are.
 param set-default CA_ROTOR_COUNT 10
-param set-default CA_ROTOR0_PX 1.6810         # FL upper, CCW
+param set-default CA_ROTOR0_PX 1.6634         # FL upper, CCW
 param set-default CA_ROTOR0_PY -1.7219
-param set-default CA_ROTOR0_PZ 0.2263
+param set-default CA_ROTOR0_PZ 0.2182
 param set-default CA_ROTOR0_KM 0.148
 param set-default CA_ROTOR0_CT 4.435
-param set-default CA_ROTOR1_PX 1.6810         # FL lower, CW
+param set-default CA_ROTOR1_PX 1.6634         # FL lower, CW
 param set-default CA_ROTOR1_PY -1.7219
-param set-default CA_ROTOR1_PZ 0.2964
+param set-default CA_ROTOR1_PZ 0.2883
 param set-default CA_ROTOR1_KM -0.184
 param set-default CA_ROTOR1_CT 3.536
-param set-default CA_ROTOR2_PX 1.6810         # FR upper, CW
+param set-default CA_ROTOR2_PX 1.6634         # FR upper, CW
 param set-default CA_ROTOR2_PY 1.7219
-param set-default CA_ROTOR2_PZ 0.2263
+param set-default CA_ROTOR2_PZ 0.2182
 param set-default CA_ROTOR2_KM -0.148
 param set-default CA_ROTOR2_CT 4.435
-param set-default CA_ROTOR3_PX 1.6810         # FR lower, CCW
+param set-default CA_ROTOR3_PX 1.6634         # FR lower, CCW
 param set-default CA_ROTOR3_PY 1.7219
-param set-default CA_ROTOR3_PZ 0.2964
+param set-default CA_ROTOR3_PZ 0.2883
 param set-default CA_ROTOR3_KM 0.184
 param set-default CA_ROTOR3_CT 3.536
-param set-default CA_ROTOR4_PX -1.0190        # RL upper, CW
+param set-default CA_ROTOR4_PX -1.0246        # RL upper, CW
 param set-default CA_ROTOR4_PY -1.7219
-param set-default CA_ROTOR4_PZ -0.4135
+param set-default CA_ROTOR4_PZ -0.2957
 param set-default CA_ROTOR4_KM -0.148
 param set-default CA_ROTOR4_CT 4.435
-param set-default CA_ROTOR5_PX -1.0190        # RL lower, CCW
+param set-default CA_ROTOR5_PX -1.0366        # RL lower, CCW
 param set-default CA_ROTOR5_PY -1.7219
-param set-default CA_ROTOR5_PZ -0.3437
+param set-default CA_ROTOR5_PZ -0.2268
 param set-default CA_ROTOR5_KM 0.184
 param set-default CA_ROTOR5_CT 3.536
-param set-default CA_ROTOR6_PX -1.0190        # RR upper, CCW
+param set-default CA_ROTOR6_PX -1.0246        # RR upper, CCW
 param set-default CA_ROTOR6_PY 1.7219
-param set-default CA_ROTOR6_PZ -0.4135
+param set-default CA_ROTOR6_PZ -0.2957
 param set-default CA_ROTOR6_KM 0.148
 param set-default CA_ROTOR6_CT 4.435
-param set-default CA_ROTOR7_PX -1.0190        # RR lower, CW
+param set-default CA_ROTOR7_PX -1.0366        # RR lower, CW
 param set-default CA_ROTOR7_PY 1.7219
-param set-default CA_ROTOR7_PZ -0.3437
+param set-default CA_ROTOR7_PZ -0.2268
 param set-default CA_ROTOR7_KM -0.184
 param set-default CA_ROTOR7_CT 3.536
 
-# The pushers (y -+0.705, z -0.1585) are declared as pure forward thrust on the centreline: at their real y PX4
-# hands them part of the hover yaw, which a pusher at rest cannot give both ways, and its yaw desaturation then
-# cancels the command (ControlAllocationSequentialDesaturation.cpp). Their 0.18 m above the CG is left to the rate loop.
-param set-default CA_ROTOR8_PX -2.0904        # pusher left
+# The pushers sit at y ±0.450 m with the exhaust 10 deg down. They are declared on the centreline: at their real y
+# PX4 hands them part of the hover yaw, which a pusher at rest cannot give both ways, and its yaw desaturation then
+# cancels the command (ControlAllocationSequentialDesaturation.cpp). AX/AZ is the tilted thrust axis (FRD).
+param set-default CA_ROTOR8_PX -2.1079        # pusher left
 param set-default CA_ROTOR8_PY 0
 param set-default CA_ROTOR8_PZ 0
-param set-default CA_ROTOR8_AX 1
-param set-default CA_ROTOR8_AZ 0
+param set-default CA_ROTOR8_AX 0.9848
+param set-default CA_ROTOR8_AZ -0.1736
 param set-default CA_ROTOR8_CT 2.633
-param set-default CA_ROTOR9_PX -2.0904        # pusher right
+param set-default CA_ROTOR9_PX -2.1079        # pusher right
 param set-default CA_ROTOR9_PY 0
 param set-default CA_ROTOR9_PZ 0
-param set-default CA_ROTOR9_AX 1
-param set-default CA_ROTOR9_AZ 0
+param set-default CA_ROTOR9_AX 0.9848
+param set-default CA_ROTOR9_AZ -0.1736
 param set-default CA_ROTOR9_CT 2.633
 
 param set-default PWM_MAIN_FUNC1 101

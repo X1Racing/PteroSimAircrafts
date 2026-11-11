@@ -1,0 +1,887 @@
+{
+  "source_revision": "35396c71a6f90cea8ef162ffbb69d950aacc64f1",
+  "source_sha256": "675e8a3378e750a610d1f5116bf43449d938db87b3e9c9113cc8c37262d9b1ad",
+  "winding": [
+    {
+      "name": "Body",
+      "volume_before": -2.8600925908768797,
+      "flipped": true,
+      "reason": "exterior volume -2.8601; flipped 1 inward shell(s)"
+    },
+    {
+      "name": "Cockpit_Deck",
+      "volume_before": 0.0015784226114118848,
+      "flipped": true,
+      "reason": "exterior volume 0.0016; flipped 2 inward shell(s)"
+    },
+    {
+      "name": "Canopy",
+      "volume_before": -0.6855250420781273,
+      "flipped": true,
+      "reason": "exterior volume -0.6855; flipped 1 inward shell(s)"
+    },
+    {
+      "name": "Canopy_Frame",
+      "volume_before": -0.003097851690388916,
+      "flipped": true,
+      "reason": "exterior volume -0.0031; flipped 1 inward shell(s)"
+    },
+    {
+      "name": "Seat_L",
+      "volume_before": 0.017699346682275012,
+      "flipped": true,
+      "reason": "interior flipped to face the eye (0.46 -> 0.54)"
+    },
+    {
+      "name": "Seat_R",
+      "volume_before": -0.017699346682275012,
+      "flipped": false,
+      "reason": "interior faces the eye (0.54)"
+    },
+    {
+      "name": "Cockpit_Floor",
+      "volume_before": -0.00725910368996803,
+      "flipped": false,
+      "reason": "interior faces the eye (0.70)"
+    },
+    {
+      "name": "Footrest_L",
+      "volume_before": 0.001233917402120207,
+      "flipped": true,
+      "reason": "interior flipped to face the eye (0.39 -> 0.61)"
+    },
+    {
+      "name": "Footrest_R",
+      "volume_before": -0.001233917402120207,
+      "flipped": false,
+      "reason": "interior faces the eye (0.61)"
+    },
+    {
+      "name": "Cockpit_Tub",
+      "volume_before": -1.0510560207252446,
+      "flipped": false,
+      "reason": "interior faces the eye (1.00)"
+    },
+    {
+      "name": "Dash",
+      "volume_before": -0.010112262243219794,
+      "flipped": false,
+      "reason": "interior faces the eye (0.51)"
+    },
+    {
+      "name": "Dash_Screen",
+      "volume_before": 0.0007533605326572721,
+      "flipped": true,
+      "reason": "interior flipped to face the eye (0.17 -> 0.83)"
+    },
+    {
+      "name": "Screen_Display",
+      "volume_before": 0.0,
+      "flipped": false,
+      "reason": "interior faces the eye (1.00)"
+    },
+    {
+      "name": "Console",
+      "volume_before": 0.03660799921119206,
+      "flipped": true,
+      "reason": "interior flipped to face the eye (0.17 -> 0.83)"
+    },
+    {
+      "name": "Stick",
+      "volume_before": 0.00018461204165617635,
+      "flipped": true,
+      "reason": "interior flipped to face the eye (0.47 -> 0.53)"
+    },
+    {
+      "name": "Firewall",
+      "volume_before": 0.016128000349044786,
+      "flipped": true,
+      "reason": "interior flipped to face the eye (0.33 -> 0.67)"
+    },
+    {
+      "name": "Front_Wing_Root_L",
+      "volume_before": 0.004981725605650092,
+      "flipped": false,
+      "reason": "exterior volume 0.0050; flipped 0 inward shell(s)"
+    },
+    {
+      "name": "Front_Wing_Root_R",
+      "volume_before": -0.004981725605650092,
+      "flipped": true,
+      "reason": "exterior volume -0.0050; flipped 1 inward shell(s)"
+    },
+    {
+      "name": "Front_Wing_L",
+      "volume_before": 0.022110344846064514,
+      "flipped": false,
+      "reason": "exterior volume 0.0221; flipped 0 inward shell(s)"
+    },
+    {
+      "name": "Front_Wing_R",
+      "volume_before": -0.022110344846064514,
+      "flipped": true,
+      "reason": "exterior volume -0.0221; flipped 1 inward shell(s)"
+    },
+    {
+      "name": "Front_Wing_Fillet_L",
+      "volume_before": 0.00707284471188687,
+      "flipped": false,
+      "reason": "exterior volume 0.0071; flipped 0 inward shell(s)"
+    },
+    {
+      "name": "Front_Wing_Fillet_R",
+      "volume_before": -0.00707284471188687,
+      "flipped": true,
+      "reason": "exterior volume -0.0071; flipped 1 inward shell(s)"
+    },
+    {
+      "name": "Rear_Wing_Stub_L",
+      "volume_before": 0.04990345260522849,
+      "flipped": false,
+      "reason": "exterior volume 0.0499; flipped 0 inward shell(s)"
+    },
+    {
+      "name": "Rear_Wing_Stub_R",
+      "volume_before": -0.04990345260522849,
+      "flipped": true,
+      "reason": "exterior volume -0.0499; flipped 1 inward shell(s)"
+    },
+    {
+      "name": "Rear_Wing_L",
+      "volume_before": 0.021699889881401712,
+      "flipped": false,
+      "reason": "exterior volume 0.0217; flipped 0 inward shell(s)"
+    },
+    {
+      "name": "Rear_Wing_R",
+      "volume_before": -0.021699889881401712,
+      "flipped": true,
+      "reason": "exterior volume -0.0217; flipped 1 inward shell(s)"
+    },
+    {
+      "name": "Rear_Wing_Fillet_L",
+      "volume_before": 0.009221705157801574,
+      "flipped": false,
+      "reason": "exterior volume 0.0092; flipped 0 inward shell(s)"
+    },
+    {
+      "name": "Rear_Wing_Fillet_R",
+      "volume_before": -0.009221705157801574,
+      "flipped": true,
+      "reason": "exterior volume -0.0092; flipped 1 inward shell(s)"
+    },
+    {
+      "name": "Engine_Louvres",
+      "volume_before": 0.0013895991887332042,
+      "flipped": false,
+      "reason": "exterior volume 0.0014; flipped 0 inward shell(s)"
+    },
+    {
+      "name": "Flank_Swoosh_L",
+      "volume_before": 0.012487625014240668,
+      "flipped": false,
+      "reason": "exterior volume 0.0125; flipped 0 inward shell(s)"
+    },
+    {
+      "name": "Flank_Swoosh_R",
+      "volume_before": -0.012487625014240668,
+      "flipped": true,
+      "reason": "exterior volume -0.0125; flipped 1 inward shell(s)"
+    },
+    {
+      "name": "Duct_FL",
+      "volume_before": 0.018571625785246144,
+      "flipped": true,
+      "reason": "exterior volume 0.0186; flipped 1 inward shell(s)"
+    },
+    {
+      "name": "Duct_FR",
+      "volume_before": -0.018571625785246144,
+      "flipped": true,
+      "reason": "exterior volume -0.0186; flipped 4 inward shell(s)"
+    },
+    {
+      "name": "Duct_RL",
+      "volume_before": 0.018475333282298795,
+      "flipped": true,
+      "reason": "exterior volume 0.0185; flipped 1 inward shell(s)"
+    },
+    {
+      "name": "Duct_RR",
+      "volume_before": -0.018475333282298795,
+      "flipped": true,
+      "reason": "exterior volume -0.0185; flipped 4 inward shell(s)"
+    },
+    {
+      "name": "Thruster_L",
+      "volume_before": 0.06872455697109504,
+      "flipped": false,
+      "reason": "exterior volume 0.0687; flipped 0 inward shell(s)"
+    },
+    {
+      "name": "Thruster_R",
+      "volume_before": -0.06872455697109504,
+      "flipped": true,
+      "reason": "exterior volume -0.0687; flipped 2 inward shell(s)"
+    },
+    {
+      "name": "Sponson_Pylon_L",
+      "volume_before": 0.002268804767851178,
+      "flipped": false,
+      "reason": "exterior volume 0.0023; flipped 0 inward shell(s)"
+    },
+    {
+      "name": "Sponson_Pylon_R",
+      "volume_before": -0.002268804767851178,
+      "flipped": true,
+      "reason": "exterior volume -0.0023; flipped 1 inward shell(s)"
+    },
+    {
+      "name": "Sponson_L",
+      "volume_before": -0.12060597975380394,
+      "flipped": true,
+      "reason": "exterior volume -0.1206; flipped 1 inward shell(s)"
+    },
+    {
+      "name": "Sponson_R",
+      "volume_before": 0.12060597975380394,
+      "flipped": false,
+      "reason": "exterior volume 0.1206; flipped 0 inward shell(s)"
+    },
+    {
+      "name": "Fuel_Filler_L",
+      "volume_before": 9.375735579305357e-05,
+      "flipped": false,
+      "reason": "exterior volume 0.0001; flipped 0 inward shell(s)"
+    },
+    {
+      "name": "Fuel_Filler_R",
+      "volume_before": -9.375735579305357e-05,
+      "flipped": true,
+      "reason": "exterior volume -0.0001; flipped 1 inward shell(s)"
+    },
+    {
+      "name": "Wheel_FL",
+      "volume_before": 0.002059317624326568,
+      "flipped": false,
+      "reason": "exterior volume 0.0021; flipped 0 inward shell(s)"
+    },
+    {
+      "name": "Wheel_FR",
+      "volume_before": -0.0020593176243265685,
+      "flipped": true,
+      "reason": "exterior volume -0.0021; flipped 2 inward shell(s)"
+    },
+    {
+      "name": "Wheel_Fork_FL",
+      "volume_before": 0.0006654119152436403,
+      "flipped": false,
+      "reason": "exterior volume 0.0007; flipped 0 inward shell(s)"
+    },
+    {
+      "name": "Wheel_Fork_FR",
+      "volume_before": -0.0006654119152436403,
+      "flipped": true,
+      "reason": "exterior volume -0.0007; flipped 3 inward shell(s)"
+    },
+    {
+      "name": "Wheel_RL",
+      "volume_before": 0.0020593176243265685,
+      "flipped": false,
+      "reason": "exterior volume 0.0021; flipped 0 inward shell(s)"
+    },
+    {
+      "name": "Wheel_RR",
+      "volume_before": -0.0020593176243265685,
+      "flipped": true,
+      "reason": "exterior volume -0.0021; flipped 2 inward shell(s)"
+    },
+    {
+      "name": "Wheel_Fork_RL",
+      "volume_before": 0.0006654118137667295,
+      "flipped": false,
+      "reason": "exterior volume 0.0007; flipped 0 inward shell(s)"
+    },
+    {
+      "name": "Wheel_Fork_RR",
+      "volume_before": -0.0006654118137667295,
+      "flipped": true,
+      "reason": "exterior volume -0.0007; flipped 3 inward shell(s)"
+    },
+    {
+      "name": "OPF_Ext_Vapour_Line_L",
+      "volume_before": 0.0019369106225480299,
+      "flipped": false,
+      "reason": "exterior volume 0.0019; flipped 0 inward shell(s)"
+    },
+    {
+      "name": "OPF_Ext_Vapour_Line_R",
+      "volume_before": 0.0019368885123399544,
+      "flipped": false,
+      "reason": "exterior volume 0.0019; flipped 0 inward shell(s)"
+    },
+    {
+      "name": "OPF_Ext_Liquid_Return_L",
+      "volume_before": 0.0006848905351411941,
+      "flipped": false,
+      "reason": "exterior volume 0.0007; flipped 0 inward shell(s)"
+    },
+    {
+      "name": "OPF_Ext_Liquid_Return_R",
+      "volume_before": 0.0006846181034256433,
+      "flipped": false,
+      "reason": "exterior volume 0.0007; flipped 0 inward shell(s)"
+    },
+    {
+      "name": "OPF_Ext_Exhaust_Downpipe",
+      "volume_before": 0.018550868295996028,
+      "flipped": false,
+      "reason": "exterior volume 0.0186; flipped 0 inward shell(s)"
+    },
+    {
+      "name": "OPF_Fan_HX_L",
+      "volume_before": 0.0008994551657344642,
+      "flipped": true,
+      "reason": "exterior volume 0.0009; flipped 13 inward shell(s)"
+    },
+    {
+      "name": "OPF_Fan_HX_R",
+      "volume_before": 0.0008994547406110283,
+      "flipped": true,
+      "reason": "exterior volume 0.0009; flipped 13 inward shell(s)"
+    },
+    {
+      "name": "Rotor_FL_Upper",
+      "volume_before": 0.003308526362237911,
+      "flipped": false,
+      "reason": "exterior volume 0.0033; flipped 0 inward shell(s)"
+    },
+    {
+      "name": "Rotor_FR_Upper",
+      "volume_before": -0.003308526362237911,
+      "flipped": true,
+      "reason": "exterior volume -0.0033; flipped 14 inward shell(s)"
+    },
+    {
+      "name": "Rotor_FL_Lower",
+      "volume_before": 0.003933792013313953,
+      "flipped": false,
+      "reason": "exterior volume 0.0039; flipped 0 inward shell(s)"
+    },
+    {
+      "name": "Rotor_FR_Lower",
+      "volume_before": -0.003933792013313953,
+      "flipped": true,
+      "reason": "exterior volume -0.0039; flipped 18 inward shell(s)"
+    },
+    {
+      "name": "Rotor_RL_Upper",
+      "volume_before": 0.0033085263689276684,
+      "flipped": false,
+      "reason": "exterior volume 0.0033; flipped 0 inward shell(s)"
+    },
+    {
+      "name": "Rotor_RR_Upper",
+      "volume_before": -0.0033085263689276684,
+      "flipped": true,
+      "reason": "exterior volume -0.0033; flipped 14 inward shell(s)"
+    },
+    {
+      "name": "Rotor_RL_Lower",
+      "volume_before": 0.0039337920128483155,
+      "flipped": false,
+      "reason": "exterior volume 0.0039; flipped 0 inward shell(s)"
+    },
+    {
+      "name": "Rotor_RR_Lower",
+      "volume_before": -0.0039337920128483155,
+      "flipped": true,
+      "reason": "exterior volume -0.0039; flipped 18 inward shell(s)"
+    },
+    {
+      "name": "Thruster_Fan_L",
+      "volume_before": 0.005444002108426632,
+      "flipped": false,
+      "reason": "exterior volume 0.0054; flipped 0 inward shell(s)"
+    },
+    {
+      "name": "Thruster_Fan_R",
+      "volume_before": -0.005444002108426632,
+      "flipped": true,
+      "reason": "exterior volume -0.0054; flipped 12 inward shell(s)"
+    }
+  ],
+  "anchors_ptero_m": {
+    "Eye_L": [
+      -0.3,
+      1.0649,
+      -0.7288
+    ],
+    "Eye_R": [
+      0.3,
+      1.0649,
+      -0.7288
+    ],
+    "Screen_Centre": [
+      -0.0,
+      0.8378,
+      -1.37
+    ],
+    "Stick_Pivot": [
+      -0.0,
+      0.62,
+      -1.1
+    ]
+  },
+  "eye_structural_in": [
+    -28.69,
+    -11.81,
+    41.92
+  ],
+  "eye_from_cg_vehicle_m": [
+    0.892,
+    -0.3,
+    0.3315
+  ],
+  "ballast_left_structural_in": [
+    -38.33,
+    -11.81,
+    23.74
+  ],
+  "cushion_kit_m": [
+    0.3,
+    0.323,
+    0.9737
+  ],
+  "race_cg_structural_in": [
+    6.43,
+    0.0,
+    28.87
+  ],
+  "race_weight_lb": 3499.9,
+  "fixture_vehicle_m": [
+    0.1632,
+    -0.0,
+    -0.7334
+  ],
+  "fans": [
+    {
+      "source": "Rotor_FL_Upper",
+      "file": "meshes/x1_fan_fl_upper.glb",
+      "motor": "FL upper",
+      "spin_seen_from": "above",
+      "spin": "CCW",
+      "thrust_vehicle": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_vehicle": [
+        -0.0,
+        -0.0,
+        -1.0
+      ],
+      "hub_vehicle_m": [
+        1.5,
+        -1.7219,
+        0.515
+      ],
+      "thrust_point_vehicle_m": [
+        1.5,
+        -1.7219,
+        0.515
+      ],
+      "visual_offset_vehicle_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "structural_in": [
+        -59.06,
+        -67.79,
+        20.28
+      ],
+      "jsb_pitch_deg": 90.0
+    },
+    {
+      "source": "Rotor_FL_Lower",
+      "file": "meshes/x1_fan_fl_lower.glb",
+      "motor": "FL lower",
+      "spin_seen_from": "above",
+      "spin": "CW",
+      "thrust_vehicle": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_vehicle": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "hub_vehicle_m": [
+        1.5,
+        -1.7219,
+        0.445
+      ],
+      "thrust_point_vehicle_m": [
+        1.5,
+        -1.7219,
+        0.445
+      ],
+      "visual_offset_vehicle_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "structural_in": [
+        -59.06,
+        -67.79,
+        17.52
+      ],
+      "jsb_pitch_deg": 90.0
+    },
+    {
+      "source": "Rotor_FR_Upper",
+      "file": "meshes/x1_fan_fr_upper.glb",
+      "motor": "FR upper",
+      "spin_seen_from": "above",
+      "spin": "CW",
+      "thrust_vehicle": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_vehicle": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "hub_vehicle_m": [
+        1.5,
+        1.7219,
+        0.515
+      ],
+      "thrust_point_vehicle_m": [
+        1.5,
+        1.7219,
+        0.515
+      ],
+      "visual_offset_vehicle_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "structural_in": [
+        -59.06,
+        67.79,
+        20.28
+      ],
+      "jsb_pitch_deg": 90.0
+    },
+    {
+      "source": "Rotor_FR_Lower",
+      "file": "meshes/x1_fan_fr_lower.glb",
+      "motor": "FR lower",
+      "spin_seen_from": "above",
+      "spin": "CCW",
+      "thrust_vehicle": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_vehicle": [
+        -0.0,
+        -0.0,
+        -1.0
+      ],
+      "hub_vehicle_m": [
+        1.5,
+        1.7219,
+        0.445
+      ],
+      "thrust_point_vehicle_m": [
+        1.5,
+        1.7219,
+        0.445
+      ],
+      "visual_offset_vehicle_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "structural_in": [
+        -59.06,
+        67.79,
+        17.52
+      ],
+      "jsb_pitch_deg": 90.0
+    },
+    {
+      "source": "Rotor_RL_Upper",
+      "file": "meshes/x1_fan_rl_upper.glb",
+      "motor": "RL upper",
+      "spin_seen_from": "above",
+      "spin": "CW",
+      "thrust_vehicle": [
+        0.1736,
+        0.0,
+        0.9848
+      ],
+      "axis_vehicle": [
+        0.1736,
+        0.0,
+        0.9848
+      ],
+      "hub_vehicle_m": [
+        -1.1878,
+        -1.7219,
+        1.0289
+      ],
+      "thrust_point_vehicle_m": [
+        -1.1878,
+        -1.7219,
+        1.0289
+      ],
+      "visual_offset_vehicle_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "structural_in": [
+        46.77,
+        -67.79,
+        40.51
+      ],
+      "jsb_pitch_deg": 80.0
+    },
+    {
+      "source": "Rotor_RL_Lower",
+      "file": "meshes/x1_fan_rl_lower.glb",
+      "motor": "RL lower",
+      "spin_seen_from": "above",
+      "spin": "CCW",
+      "thrust_vehicle": [
+        0.1736,
+        0.0,
+        0.9848
+      ],
+      "axis_vehicle": [
+        -0.1736,
+        -0.0,
+        -0.9848
+      ],
+      "hub_vehicle_m": [
+        -1.2,
+        -1.7219,
+        0.96
+      ],
+      "thrust_point_vehicle_m": [
+        -1.2,
+        -1.7219,
+        0.96
+      ],
+      "visual_offset_vehicle_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "structural_in": [
+        47.24,
+        -67.79,
+        37.8
+      ],
+      "jsb_pitch_deg": 80.0
+    },
+    {
+      "source": "Rotor_RR_Upper",
+      "file": "meshes/x1_fan_rr_upper.glb",
+      "motor": "RR upper",
+      "spin_seen_from": "above",
+      "spin": "CCW",
+      "thrust_vehicle": [
+        0.1736,
+        0.0,
+        0.9848
+      ],
+      "axis_vehicle": [
+        -0.1736,
+        -0.0,
+        -0.9848
+      ],
+      "hub_vehicle_m": [
+        -1.1878,
+        1.7219,
+        1.0289
+      ],
+      "thrust_point_vehicle_m": [
+        -1.1878,
+        1.7219,
+        1.0289
+      ],
+      "visual_offset_vehicle_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "structural_in": [
+        46.77,
+        67.79,
+        40.51
+      ],
+      "jsb_pitch_deg": 80.0
+    },
+    {
+      "source": "Rotor_RR_Lower",
+      "file": "meshes/x1_fan_rr_lower.glb",
+      "motor": "RR lower",
+      "spin_seen_from": "above",
+      "spin": "CW",
+      "thrust_vehicle": [
+        0.1736,
+        0.0,
+        0.9848
+      ],
+      "axis_vehicle": [
+        0.1736,
+        0.0,
+        0.9848
+      ],
+      "hub_vehicle_m": [
+        -1.2,
+        1.7219,
+        0.96
+      ],
+      "thrust_point_vehicle_m": [
+        -1.2,
+        1.7219,
+        0.96
+      ],
+      "visual_offset_vehicle_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "structural_in": [
+        47.24,
+        67.79,
+        37.8
+      ],
+      "jsb_pitch_deg": 80.0
+    },
+    {
+      "source": "Thruster_Fan_L",
+      "file": "meshes/x1_pusher_left.glb",
+      "motor": "pusher left",
+      "spin_seen_from": "behind",
+      "spin": "CCW",
+      "thrust_vehicle": [
+        0.9848,
+        0.0,
+        0.1736
+      ],
+      "axis_vehicle": [
+        0.9848,
+        0.0,
+        0.1736
+      ],
+      "hub_vehicle_m": [
+        -2.1827,
+        -0.45,
+        0.8156
+      ],
+      "thrust_point_vehicle_m": [
+        -2.2712,
+        -0.45,
+        0.8
+      ],
+      "visual_offset_vehicle_m": [
+        0.0885,
+        -0.0,
+        0.0156
+      ],
+      "structural_in": [
+        89.42,
+        -17.72,
+        31.5
+      ],
+      "jsb_pitch_deg": 10.0
+    },
+    {
+      "source": "Thruster_Fan_R",
+      "file": "meshes/x1_pusher_right.glb",
+      "motor": "pusher right",
+      "spin_seen_from": "behind",
+      "spin": "CW",
+      "thrust_vehicle": [
+        0.9848,
+        0.0,
+        0.1736
+      ],
+      "axis_vehicle": [
+        -0.9848,
+        -0.0,
+        -0.1736
+      ],
+      "hub_vehicle_m": [
+        -2.1827,
+        0.45,
+        0.8156
+      ],
+      "thrust_point_vehicle_m": [
+        -2.2712,
+        0.45,
+        0.8
+      ],
+      "visual_offset_vehicle_m": [
+        0.0885,
+        0.0,
+        0.0156
+      ],
+      "structural_in": [
+        89.42,
+        17.72,
+        31.5
+      ],
+      "jsb_pitch_deg": 10.0
+    }
+  ],
+  "contacts_structural_in": {
+    "NOSE_TIP": [
+      -107.92,
+      -0.0,
+      23.62
+    ],
+    "TAIL": [
+      107.92,
+      0.0,
+      36.61
+    ],
+    "CANOPY_TOP": [
+      -26.16,
+      -0.0,
+      52.7
+    ],
+    "Duct_FL": [
+      -59.06,
+      -67.79,
+      12.99
+    ],
+    "Duct_FR": [
+      -59.06,
+      67.79,
+      12.99
+    ],
+    "Duct_RL": [
+      23.75,
+      -67.79,
+      32.59
+    ],
+    "Duct_RR": [
+      23.75,
+      67.79,
+      32.59
+    ]
+  },
+  "screen_note": "Screen_Display UVs are the source 0..1 map (u left to right as the occupants see it, v bottom to top)."
+}

@@ -5,17 +5,18 @@
     <wingspan unit="M"> 2.2472 </wingspan>
     <!-- area-weighted mean aerodynamic chord of the two wings -->
     <chord unit="M"> 1.0694 </chord>
-    <!-- race CG (full propane and ballast): Aero.xml moments are taken about it -->
+    <!-- October AVL reference (full propane and the seats of that model). Aero.xml moments are taken about it. -->
+    <!-- The mass CG moved when the seats did; it is (6.43, 0, 28.87) in and is not this point. -->
     <location name="AERORP" unit="IN">
       <x> 7.12 </x>
       <y> 0 </y>
       <z> 29.19 </z>
     </location>
-    <!-- driver's eye, left seat (concept model camera) -->
+    <!-- driver's eye, left seat, revision 35396c71 Eye_L. Aero moments stay about AERORP above, which is the October reference. -->
     <location name="EYEPOINT" unit="IN">
-      <x> -35.43 </x>
-      <y> -12.6 </y>
-      <z> 42.52 </z>
+      <x> -28.69 </x>
+      <y> -11.81 </y>
+      <z> 41.92 </z>
     </location>
     <!-- concept model origin: on the ground under the craft centre -->
     <location name="VRP" unit="IN">

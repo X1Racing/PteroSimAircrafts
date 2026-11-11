@@ -61,10 +61,10 @@
       <brake_group> NONE </brake_group>
       <retractable> 0 </retractable>
     </contact>
-    <!-- hard points that touch first when the craft lands off its wheels: nose, tail, duct bottoms, canopy -->
+    <!-- hard points that touch first when the craft lands off its wheels: nose, tail, lowest point of each duct ring, canopy crown -->
     <contact type="STRUCTURE" name="NOSE_TIP">
       <location unit="IN">
-        <x> -107.87 </x>
+        <x> -107.92 </x>
         <y> 0 </y>
         <z> 23.62 </z>
       </location>
@@ -75,7 +75,7 @@
     </contact>
     <contact type="STRUCTURE" name="TAIL">
       <location unit="IN">
-        <x> 107.87 </x>
+        <x> 107.92 </x>
         <y> 0 </y>
         <z> 36.61 </z>
       </location>
@@ -87,7 +87,7 @@
     <contact type="STRUCTURE" name="DUCT_FL">
       <location unit="IN">
         <x> -59.06 </x>
-        <y> -92.91 </y>
+        <y> -67.79 </y>
         <z> 12.99 </z>
       </location>
       <static_friction> 1.0 </static_friction>
@@ -98,7 +98,7 @@
     <contact type="STRUCTURE" name="DUCT_FR">
       <location unit="IN">
         <x> -59.06 </x>
-        <y> 92.91 </y>
+        <y> 67.79 </y>
         <z> 12.99 </z>
       </location>
       <static_friction> 1.0 </static_friction>
@@ -108,9 +108,9 @@
     </contact>
     <contact type="STRUCTURE" name="DUCT_RL">
       <location unit="IN">
-        <x> 47.24 </x>
-        <y> -92.91 </y>
-        <z> 38.19 </z>
+        <x> 23.75 </x>
+        <y> -67.79 </y>
+        <z> 32.59 </z>
       </location>
       <static_friction> 1.0 </static_friction>
       <dynamic_friction> 0.8 </dynamic_friction>
@@ -119,9 +119,9 @@
     </contact>
     <contact type="STRUCTURE" name="DUCT_RR">
       <location unit="IN">
-        <x> 47.24 </x>
-        <y> 92.91 </y>
-        <z> 38.19 </z>
+        <x> 23.75 </x>
+        <y> 67.79 </y>
+        <z> 32.59 </z>
       </location>
       <static_friction> 1.0 </static_friction>
       <dynamic_friction> 0.8 </dynamic_friction>
@@ -130,9 +130,9 @@
     </contact>
     <contact type="STRUCTURE" name="CANOPY_TOP">
       <location unit="IN">
-        <x> -35.43 </x>
+        <x> -26.16 </x>
         <y> 0 </y>
-        <z> 50 </z>
+        <z> 52.70 </z>
       </location>
       <static_friction> 1.0 </static_friction>
       <dynamic_friction> 0.8 </dynamic_friction>
